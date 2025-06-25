@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Lista de participantes
         let participantsHTML = '';
         if (details.participants.length > 0) {
-          participantsHTML = `<ul style="margin-top:8px; margin-bottom:0; padding-left:18px; font-size: 0.95em; color: #444;">
+          participantsHTML = `<ul class="participants-list">
             ${details.participants.map(p => `<li>${p}</li>`).join('')}
           </ul>`;
         } else {
